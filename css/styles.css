@@ -1,0 +1,142 @@
+/*-----------    Variables  ---------------*/
+:root {
+    /*Colors*/
+    --color-blue:#197CDF;
+    --color-blue2:#158ad5;
+    --color-blue-opacity: rgba(23, 81, 191, .88);
+    --color-white: white;
+    --color-black: black;
+    --color-gray: #222121;
+    /*Space*/
+    --espaciado: 10px;
+
+    /*Font-size*/
+    --font-big-bigger:18px;
+    --font-big: 16px;
+    --font-medium: 14px;
+    --font-small: 12px;
+}
+
+/*Especificaciones en General*/
+html,
+html::after,
+html::before {
+    box-sizing: border-box;
+}
+/*Solucionar esto*/
+* {
+	margin: 0;
+  padding: 0;
+}
+/*-----------------*/
+body {
+    font-family: 'console', 'comic-sans' , sans-serif;
+    background-color: var(--color-gray);
+    color:var(--color-white);
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-black);
+}
+
+ul {
+	list-style: none;
+}
+
+.title {
+    margin: 0;
+    font-size: var(--font-medium);
+}
+.not-active {
+	display: none!important;
+}
+
+/*Header*/
+header.header {
+    width: 100%;
+    height: 90vh;
+    /*background-image: url(../img/background-header.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;*/
+    background-color: gray;
+    display: grid;
+    grid-template: [start] 80px [row1] 1fr [row2] 60% [end] / [start] 1fr [col1] 1fr [col2] 1fr [end];
+    grid-auto-columns: 10%;
+    position: relative;
+}
+
+/*Menu de navegacion*/
+.header-nav-bar {
+    grid-column: col1 / span end;
+}
+.nav-bar {
+	display: flex;
+    flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+}
+
+.nav-bar ul {
+	width: 75%;
+	display: inherit;
+	justify-content: space-between;
+}
+.nav-bar ul li {
+	padding: 10px 15px;
+}
+.nav-bar ul li:hover {
+	background-color: var(--color-blue-opacity);
+	border-radius: 20px;
+}
+.nav-bar ul li a {
+	font-size: var(--font-big-bigger);
+	color:var(--color-white);
+}
+
+/*boton movil*/
+.btn-more-option {
+    grid-column: 4;
+    width: 3.7vw;
+    height: fit-content;
+    justify-self: center;
+    align-self: center;
+}
+
+.btn-more-option span {
+	display: block;
+	height: 5px;
+	padding: 3px;
+	margin-bottom: 7px;
+	background-color: var(--color-black);
+}
+
+/*Imagen de perfil del header*/
+.header-img-profile {
+    grid-area: profile-img;
+    background-color: green;
+    padding: 100px 50px;
+    grid-row: row2 / span end;
+    grid-column: col1 / span col2;
+}
+
+/*Mi Nombre*/
+.header-my-name {
+    justify-self: center;
+    position: absolute;
+    bottom: -25px;
+    color: var(--color-white);
+    background-color: var(--color-blue2);
+    width: 38%;
+    border-radius: 25px;
+    box-shadow: 1px 1px 10px var(--color-gray);
+}
+
+.header-my-name h1 {
+    padding:10px 0;
+    text-shadow: 0 5px 11px var(--color-gray);
+    letter-spacing: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
