@@ -1,0 +1,120 @@
+/*-----------    Variables  ---------------*/
+:root {
+    /*Colors*/
+    /*--color-dark-blue: #1f1c33;
+	--color-blue:#197CDF;
+	--color-blue-opacity: #197cdfc4;
+	--color-light-gray:rgba(107,103,103,.77);
+	--color-highligth-gray: rgb(165 163 163 / 34%);
+	--color-gray: #6b6767;
+	--color-yellow:#EEE20A;
+	--color-red:#F21802;
+	--color-ligth-red: rgba(242,24,2,.9);
+	--color-lila:#7B60D3;
+	--color-yellow-opacity: #eee20ac9;
+	--color-lila-opacity: #7b60d3d1;*/
+    --color-blue:#197CDF;
+    --color-blue-opacity: rgba(23, 81, 191, .88);
+    --color-white: white;
+    --color-black: black;
+    /*Space*/
+    --espaciado: 10px;
+
+    /*Font-size*/
+    --font-big: 16px;
+    --font-medium: 14px;
+    --font-small: 12px;
+}
+
+/*Especificaciones en General*/
+html,
+html::after,
+html::before {
+    box-sizing: border-box;
+}
+/*Solucionar esto*/
+* {
+	margin: 0;
+  padding: 0;
+}
+/*-----------------*/
+body {
+    font-family: 'console', 'comic-sans' , sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-black);
+}
+
+ul {
+	list-style: none;
+}
+
+.title {
+    margin: 0;
+    font-size: var(--font-medium);
+}
+.not-active {
+	display: none;
+}
+
+/*Header*/
+header.header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/background-header.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: grid;
+    grid-template: [start] 1fr [medium] 1fr [end] / [start] 1fr [medium] 1fr [end];
+    justify-items: center;
+    align-items: center;
+}
+
+#title-intro {
+    font-size: 3.3em;
+    color: var(--color-white);
+    grid-row: start / span medium;
+    width: 50%;
+    letter-spacing: 5px;
+}
+
+/*Menu de navegacion*/
+.menu-bar {
+	background-color: var(--color-blue);
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+}
+
+.menu-bar ul {
+	width: 85%;
+	display: inherit;
+	justify-content: space-between;
+}
+.menu-bar ul li {
+	padding: 10px 15px;
+}
+.menu-bar ul li:hover {
+	background-color: var(--color-blue-opacity);
+	border-radius: 20px;
+}
+.menu-bar ul li a {
+	font-size: 1.2em;
+	color:var(--color-white);
+}
+
+.menu-movil {
+	width: 7vh;
+	/*display: block;*/
+}
+
+.menu-movil span {
+	display: block;
+	height: 4px;
+	padding: 2px;
+	margin-bottom: 7px;
+	background-color: black;
+}
