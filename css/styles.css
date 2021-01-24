@@ -14,6 +14,7 @@
     --color-green: rgba(51, 197, 32, 1);
     /*Space*/
     --espaciado: 10px;
+    --espaciado-secciones: 10vh;
 
     /*Font-size*/
     --font-big-bigger:18px;
@@ -58,6 +59,13 @@ ul {
 .container {
     width: 90%;
     margin: auto;
+}
+
+.bar-line {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    border-bottom: 5px dashed white;
 }
 
 /*Header*/
@@ -238,3 +246,72 @@ header.header {
     background-color: var(--color-gray-opacity);
 }
 
+#projects {
+    width: 85%;
+    height: 135vh;
+    margin: auto;
+    font-size: var(--font-medium);
+}
+
+#projects .title {
+    font-size: 2em;
+    border: 5px dashed var(--color-blue);
+    border-inline: none;
+    color: var(--color-blue);
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 2em;
+    letter-spacing: 10px;
+    line-height: 3;
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(20vw, 100%));
+    grid-gap: 30px;
+    justify-content: center;
+}
+
+.project {
+    background-color: white;
+    width: 100%;
+    min-height: 15vh;
+    max-height: 17vh;
+    cursor: pointer;
+    position: relative;
+    display: block;
+    padding: 17vh 0;
+}
+
+.project-image {
+    margin: 0;
+}
+
+.project-image img {
+    width: 100%;
+    vertical-align: top;
+}
+
+.project-overlay {
+    background: rgba(0,0,0, .4);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.project:hover .project-overlay {
+    display: flex;
+}
+
+.project-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+}
