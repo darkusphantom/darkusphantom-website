@@ -1,12 +1,17 @@
 /*-----------    Variables  ---------------*/
 :root {
     /*Colors*/
-    --color-blue:#197CDF;
-    --color-blue2:#158ad5;
+/*    --color-blue:#197CDF;*/
+    --color-blue:#158ad5;
     --color-blue-opacity: rgba(23, 81, 191, .88);
+    --color-blue-clear:rgba(59, 127, 236, .88);
     --color-white: white;
     --color-black: black;
     --color-gray: #222121;
+    --color-gray-opacity: rgba(127, 126, 126, 1);
+    --color-orange: rgba(203, 135, 11, .8);
+    --color-yellow: rgba(255, 193, 7, 1);
+    --color-green: rgba(51, 197, 32, 1);
     /*Space*/
     --espaciado: 10px;
 
@@ -31,8 +36,6 @@ html::before {
 /*-----------------*/
 body {
     font-family: 'console', 'comic-sans' , sans-serif;
-    background-color: var(--color-gray);
-    color:var(--color-white);
 }
 
 a {
@@ -50,6 +53,11 @@ ul {
 }
 .not-active {
 	display: none!important;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
 }
 
 /*Header*/
@@ -87,7 +95,7 @@ header.header {
 	padding: 10px 15px;
 }
 .nav-bar ul li:hover {
-	background-color: var(--color-blue-opacity);
+	background-color: var(--color-blue);
 	border-radius: 20px;
 }
 .nav-bar ul li a {
@@ -127,7 +135,7 @@ header.header {
     position: absolute;
     bottom: -25px;
     color: var(--color-white);
-    background-color: var(--color-blue2);
+    background-color: var(--color-blue);
     width: 38%;
     border-radius: 25px;
     box-shadow: 1px 1px 10px var(--color-gray);
@@ -140,3 +148,93 @@ header.header {
     text-align: center;
     text-transform: uppercase;
 }
+
+/*main*/
+.main {
+    background-color: var(--color-gray);
+    color:var(--color-white);
+}
+
+/*who i am*/
+#who-i-am {
+    padding: 10vh 0;
+    width: 85%;
+    height: 100vh;
+    margin: auto;
+    display: grid;
+    grid-template-columns: [start] 25% [col1] 1fr [col2] 25% [end];
+    grid-template-rows: [start] .5fr [row1] 1fr [row2] .5fr [end];
+    grid-gap: 25px;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    font-size: 1.2em;
+}
+#who-i-am h2 {
+    grid-column: col1;
+    font-size: 2em;
+    letter-spacing: 3px;
+}
+
+#who-i-am .photo {
+    grid-column: col1;
+    grid-row: row1;
+    padding: 21.5vh 11vw;
+    background-color: var(--color-black);
+    width: 5%;
+    /*border-radius: 50%;*/
+}
+
+#who-i-am .description {
+    grid-column: start;
+    grid-row: row1;
+    width: 80%;
+    line-height: 1.5;
+}
+
+#who-i-am .phrase {
+    grid-column: col1;
+    grid-row: row2;
+    width: 70%;
+    line-height: 1.7;
+}
+
+#who-i-am .technologic-languaje {
+    grid-column: col2;
+    grid-row: row1;
+    display: inherit;
+    grid-template: repeat(2, 15vh) / repeat(3, 1fr);
+    grid-gap: 10px;
+    width: 100%;
+    align-items: center;
+}
+
+.technologic-languaje span{
+    border: dashed;
+    padding: 5vh 15%;
+}
+
+.technologic-languaje .html:hover {
+    background-color: var(--color-orange);
+}
+
+.technologic-languaje .css:hover {
+    background-color: var(--color-blue-clear);
+}
+
+.technologic-languaje .js:hover {
+    background-color: var(--color-yellow);
+}
+
+.technologic-languaje .node:hover {
+    background-color: var(--color-green);
+}
+
+.technologic-languaje .php:hover {
+    background-color: var(--color-blue-opacity);
+}
+
+.technologic-languaje .sql:hover {
+    background-color: var(--color-gray-opacity);
+}
+
