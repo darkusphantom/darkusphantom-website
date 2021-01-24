@@ -4,7 +4,7 @@
 /*    --color-blue:#197CDF;*/
     --color-blue:#158ad5;
     --color-blue-opacity: rgba(23, 81, 191, .88);
-    --color-blue-clear:rgba(59, 127, 236, .88);
+    --color-blue-clear: rgba(59, 127, 236, .88);
     --color-white: white;
     --color-black: black;
     --color-gray: #222121;
@@ -48,24 +48,24 @@ ul {
 	list-style: none;
 }
 
-.title {
-    margin: 0;
-    font-size: var(--font-medium);
-}
-.not-active {
-	display: none!important;
-}
-
 .container {
-    width: 90%;
-    margin: auto;
-}
-
-.bar-line {
-    width: 90%;
+    width: 85%;
     margin: auto;
     text-align: center;
-    border-bottom: 5px dashed white;
+}
+
+.title {
+    font-size: 2em;
+    color: var(--color-blue);
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    line-height: 3;
+    border: 5px dashed var(--color-blue);
+    border-inline: none;
+}
+
+.not-active {
+	display: none!important;
 }
 
 /*Header*/
@@ -78,32 +78,32 @@ header.header {
     background-size: cover;*/
     background-color: gray;
     display: grid;
-    grid-template: [start] 80px [row1] 1fr [row2] 60% [end] / [start] 1fr [col1] 1fr [col2] 1fr [end];
-    grid-auto-columns: 10%;
+    grid-template: [start] 80px [row1] 1fr [row2] 60% [end] / [start] 1fr [col1] .3fr [col2] 200px [col3] .3fr [col4] 1fr [end];
     position: relative;
 }
 
 /*Menu de navegacion*/
 .header-nav-bar {
-    grid-column: col1 / span end;
+    grid-column: col3 / span end;
 }
 .nav-bar {
 	display: flex;
     flex-wrap: wrap;
-	justify-content: center;
+	justify-self: center;
 	align-content: center;
+    width: 85%;
 }
 
 .nav-bar ul {
-	width: 75%;
 	display: inherit;
+    flex: 1;
 	justify-content: space-between;
 }
 .nav-bar ul li {
 	padding: 10px 15px;
 }
 .nav-bar ul li:hover {
-	background-color: var(--color-blue);
+	background-color: var(--color-blue-clear);
 	border-radius: 20px;
 }
 .nav-bar ul li a {
@@ -134,7 +134,7 @@ header.header {
     background-color: green;
     padding: 100px 50px;
     grid-row: row2 / span end;
-    grid-column: col1 / span col2;
+    grid-column: col1 / span col4;
 }
 
 /*Mi Nombre*/
@@ -165,23 +165,19 @@ header.header {
 
 /*who i am*/
 #who-i-am {
-    padding: 10vh 0;
-    width: 85%;
-    height: 100vh;
+    padding: var(--espaciado-secciones) 0;
     margin: auto;
     display: grid;
     grid-template-columns: [start] 25% [col1] 1fr [col2] 25% [end];
-    grid-template-rows: [start] .5fr [row1] 1fr [row2] .5fr [end];
+    grid-template-rows: [start] 0.65fr [row1] 1fr [row2] .5fr [end];
     grid-gap: 25px;
     align-items: center;
     justify-items: center;
-    text-align: center;
     font-size: 1.2em;
 }
-#who-i-am h2 {
-    grid-column: col1;
-    font-size: 2em;
-    letter-spacing: 3px;
+#who-i-am .title {
+    grid-column: start / span end;
+    width: 85%;
 }
 
 #who-i-am .photo {
@@ -190,7 +186,6 @@ header.header {
     padding: 21.5vh 11vw;
     background-color: var(--color-black);
     width: 5%;
-    /*border-radius: 50%;*/
 }
 
 #who-i-am .description {
@@ -218,8 +213,14 @@ header.header {
 }
 
 .technologic-languaje span{
-    border: dashed;
+    border: dashed var(--color-blue);
     padding: 5vh 15%;
+}
+
+.technologic-languaje span:hover {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--color-black);
 }
 
 .technologic-languaje .html:hover {
@@ -254,15 +255,7 @@ header.header {
 }
 
 #projects .title {
-    font-size: 2em;
-    border: 5px dashed var(--color-blue);
-    border-inline: none;
-    color: var(--color-blue);
-    text-align: center;
-    text-transform: uppercase;
     margin-bottom: 2em;
-    letter-spacing: 10px;
-    line-height: 3;
 }
 
 .project-list {
@@ -293,7 +286,7 @@ header.header {
 }
 
 .project-overlay {
-    background: rgba(0,0,0, .4);
+    background: var(--color-blue-opacity);
     position: absolute;
     left: 0;
     right: 0;
@@ -303,7 +296,6 @@ header.header {
     align-items: center;
     justify-content: center;
     color: white;
-    text-align: center;
 }
 
 .project:hover .project-overlay {
@@ -313,5 +305,4 @@ header.header {
 .project-title {
     font-weight: bold;
     font-size: 1.5em;
-    text-align: center;
 }
