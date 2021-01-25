@@ -197,15 +197,15 @@ header.header {
 }
 
 #who-i-am .phrase {
-    grid-column: col1;
-    grid-row: row2;
+    grid-column: col2;
+    grid-row: row1;
     width: 70%;
     line-height: 1.7;
 }
 
 #who-i-am .technologic-languaje {
-    grid-column: col2;
-    grid-row: row1;
+    grid-column: col1;
+    grid-row: row2;
     display: inherit;
     grid-template: repeat(2, 15vh) / repeat(3, 1fr);
     grid-gap: 10px;
