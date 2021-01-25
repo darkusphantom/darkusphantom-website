@@ -44,7 +44,7 @@ a {
   color: var(--color-black);
 }
 
-ul {
+ul, li {
 	list-style: none;
 }
 
@@ -305,4 +305,37 @@ header.header {
 .project-title {
     font-weight: bold;
     font-size: 1.5em;
+}
+
+.contacts-block {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+#contacts {
+    width: 85%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: var(--espaciado-secciones);
+}
+
+#contacts .title {
+    margin-bottom: var(--espaciado-secciones);
+}
+
+.contact {
+    color:var(--color-white);
+    border: solid var(--color-blue);
+    border-top: none;
+    border-bottom: none;
+    padding: 5vh 0;
+    font-size: 1.3em;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.contact:hover{
+    background-color: white;
+    border:none;
+    color: var(--color-blue);
 }
