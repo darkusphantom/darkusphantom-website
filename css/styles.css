@@ -77,7 +77,6 @@ header.header {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    background-color: gray;
     display: grid;
     grid-template: [start] 80px [row1] 1fr [row2] 60% [end] / [start] 1fr [col1] .3fr [col2] 200px [col3] .3fr [col4] 1fr [end];
     position: relative;
@@ -155,7 +154,7 @@ header.header {
     background-color: var(--color-blue);
     width: 38%;
     border-radius: 25px;
-    box-shadow: 1px 1px 10px var(--color-gray);
+    box-shadow: 1px 1px 10px var(--color-blue);
 }
 
 .header-my-name h1 {
@@ -209,15 +208,15 @@ header.header {
 }
 
 #who-i-am .phrase {
-    grid-column: col1;
-    grid-row: row2;
+    grid-column: col2;
+    grid-row: row1;
     width: 70%;
     line-height: 1.7;
 }
 
 #who-i-am .technologic-languaje {
-    grid-column: col2;
-    grid-row: row1;
+    grid-column: col1;
+    grid-row: row2;
     display: inherit;
     grid-template: repeat(2, 15vh) / repeat(3, 1fr);
     grid-gap: 10px;
