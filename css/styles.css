@@ -55,6 +55,7 @@ ul, li {
 }
 
 .title {
+    margin: var(--espaciado-secciones) 0;
     font-size: 2em;
     color: var(--color-blue);
     text-transform: uppercase;
@@ -107,7 +108,7 @@ header.header {
 	border-radius: 20px;
 }
 .nav-bar ul li a {
-	font-size: var(--font-big-bigger);
+	font-size: 1.3em;
 	color:var(--color-white);
 }
 
@@ -161,11 +162,11 @@ header.header {
 .main {
     background-color: var(--color-gray);
     color:var(--color-white);
+    padding-top: var(--espaciado-secciones);
 }
 
 /*who i am*/
 #who-i-am {
-    padding: var(--espaciado-secciones) 0;
     margin: auto;
     display: grid;
     grid-template-columns: [start] 25% [col1] 1fr [col2] 25% [end];
@@ -220,36 +221,40 @@ header.header {
 .technologic-languaje span:hover {
     border: none;
     border-radius: 10px;
-    box-shadow: 0 0 10px var(--color-black);
 }
 
 .technologic-languaje .html:hover {
     background-color: var(--color-orange);
+    box-shadow: 0 0 10px var(--color-orange);
 }
 
 .technologic-languaje .css:hover {
     background-color: var(--color-blue-clear);
+    box-shadow: 0 0 10px var(--color-blue-clear);
 }
 
 .technologic-languaje .js:hover {
     background-color: var(--color-yellow);
+    box-shadow: 0 0 10px var(--color-yellow);
 }
 
 .technologic-languaje .node:hover {
     background-color: var(--color-green);
+    box-shadow: 0 0 10px var(--color-green);
 }
 
 .technologic-languaje .php:hover {
     background-color: var(--color-blue-opacity);
+    box-shadow: 0 0 10px var(--color-blue-opacity);
 }
 
 .technologic-languaje .sql:hover {
     background-color: var(--color-gray-opacity);
+    box-shadow: 0 0 10px var(--color-gray-opacity);
 }
 
 #projects {
     width: 85%;
-    height: 135vh;
     margin: auto;
     font-size: var(--font-medium);
 }
@@ -309,18 +314,14 @@ header.header {
 
 .contacts-block {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
 }
 
 #contacts {
     width: 85%;
+    padding-bottom: var(--espaciado-secciones);
     margin: auto;
     text-align: center;
-    margin-bottom: var(--espaciado-secciones);
-}
-
-#contacts .title {
-    margin-bottom: var(--espaciado-secciones);
 }
 
 .contact {
