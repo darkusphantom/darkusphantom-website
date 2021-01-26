@@ -67,6 +67,10 @@
 		font-size: 1em;
 	}
 
+	.btn-more-option {
+		margin-right: calc(100% - 30%);
+	}
+
 	#who-i-am{
 		font-size: 1em;
 	}
@@ -123,5 +127,12 @@
 }
 
 @media screen and (max-width: 320px) {
-	
+	.header-my-name h1 ,
+	.title {
+		font-size: .8em;
+	}
+
+	#who-i-am, .contact, footer p {
+		font-size: .6em;
+	}
 }
