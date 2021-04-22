@@ -1,0 +1,45 @@
+.aboutme {
+  display: grid;
+  grid-template-areas:
+    "title title title"
+    "intro photo phrase";
+  grid-gap: 25px;
+  align-items: center;
+  justify-items: center;
+  width: 85%;
+  margin: auto;
+}
+
+.aboutme .title {
+  grid-area: title;
+  width: 100%;
+  margin: auto;
+}
+
+.aboutme .photo {
+  grid-area: photo;
+}
+
+.aboutme .photo,
+.contact-img {
+  max-width: 100%;
+}
+
+.aboutme .photo img,
+.contact-img img {
+  width: 100%;
+  max-height: 350px;
+  object-fit: contain;
+}
+
+.aboutme .intro {
+  grid-area: intro;
+  width: 80%;
+  line-height: 1.5;
+}
+
+.aboutme .phrase {
+  grid-area: phrase;
+  width: 70%;
+  line-height: 1.7;
+}
