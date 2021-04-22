@@ -1,0 +1,43 @@
+.hero {
+  display: grid;
+  grid-template-columns: [start] 1fr [middle] 1fr [end];
+  grid-template-rows: [start] 50px [middle] 1fr [end];
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  max-height: 650px;
+  background: green;
+  font-size: 1.15rem;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.5)
+    ),
+    var(--background-hero);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+/*Mi Nombre*/
+.profile-name {
+  justify-self: center;
+  position: absolute;
+  bottom: 0;
+  color: var(--color-white);
+  background-color: var(--color-blue);
+  width: 38%;
+  border-radius: 20px;
+  box-shadow: 1px 1px 10px var(--color-blue);
+  transform: translate(0, 50%);
+}
+
+.profile-name h1 {
+  margin: 25px 0;
+  font-size: 1.7em;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 5px 11px var(--color-gray);
+  letter-spacing: 10px;
+}
