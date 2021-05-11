@@ -17,8 +17,6 @@ function Contacts() {
               href={socialNetwork.href}
               className="contact"
               key={socialNetwork.id}
-              target="_blank"
-              rel="norefferer"
             >
               <span id={nameContact}>{socialNetwork.name}</span>
               <div className="contact-img">
