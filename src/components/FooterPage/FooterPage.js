@@ -1,13 +1,13 @@
 import React from "react";
 
-import "./css/FooterPage.css";
+import "./FooterPage.css";
 
 function FooterPage() {
   return (
-    <footer>
+    <footer className="footerPage">
       <p>
         Copyright &copy; | Creado y diseñado por mi,
-        <i>Darkus Phantom (Luis Rodriguez)</i>🌟
+        <i>DarkusPhantom (Luis Rodriguez)</i>🌟
       </p>
     </footer>
   );

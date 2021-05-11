@@ -1,24 +1,24 @@
 import React from "react";
 
-import "./css/Projects.css";
-import ListProjects from "../data/ListProjects";
+import "./Projects.css";
+import GroupProjects from "../../data/GroupProjects";
 
 function Projects() {
   return (
-    <section id="projects">
-      <h2 className="title">Proyectos Recientes</h2>
-      <div className="project-list">
-        {ListProjects.map(
-          ({ id, name, projectPage, projectCover, projectCodeLink }) => {
+    <section className="projects space-section">
+      <div className="container-flex flex-column">
+        <h2 className="title-section">Proyectos Recientes</h2>
+        <div className="project-list">
+          {GroupProjects.map(({ id, name, pageLink, cover, codeLink }) => {
             return (
-              <div key={id} className="project">
+              <div key={id} className="project-list-item">
                 <figure className="project-img">
-                  <img src={projectCover} alt="Project Imagen" />
+                  <img src={cover} alt="Project Imagen" />
                 </figure>
               </div>
             );
-          }
-        )}
+          })}
+        </div>
       </div>
     </section>
   );

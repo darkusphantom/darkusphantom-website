@@ -1,35 +1,37 @@
 /*-------------------------- Contacto -----------------------*/
-#contacts {
+.socialNetwork {
   width: 85%;
-  padding-bottom: var(--espaciado-secciones);
-  margin: auto;
+  margin: 0 auto 10vh auto;
   text-align: center;
 }
 
-.contacts-block {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+.socialNetwork-container {
+  justify-content: center;
 }
 
-.contact {
-  color: var(--color-white);
+.socialNetwork-item {
+  width: 100%;
   border: solid var(--color-blue);
   border-top: none;
   border-bottom: none;
   padding: 5vh 0;
-  font-size: 1.3em;
-  font-weight: 400;
-  letter-spacing: 2px;
 }
 
-.contact:hover {
+.socialNetwork-item:hover {
   border: none;
   color: var(--color-blue);
   background-color: var(--color-white);
 }
 
+.socialNetwork-name {
+  color: var(--color-white);
+  font-size: 1.1rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
 @media screen and (max-width: 480px) {
-  #contacts {
+  .socialNetwork {
     width: auto;
   }
 }

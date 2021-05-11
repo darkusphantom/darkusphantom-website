@@ -1,39 +1,39 @@
-const ListProjects = [
+const GroupProjects = [
   {
     id: 1,
     name: "Signup Page",
-    projectCodeLink: "https://github.com/DarkusPhantom/signup-todo-app",
-    projectPage: "https://tasklist-todoapp.netlify.app/",
-    projectCover: "https://i.imgur.com/tr5fGmE.jpg",
+    codeLink: "https://github.com/DarkusPhantom/signup-todo-app",
+    pageLink: "https://tasklist-todoapp.netlify.app/",
+    cover: "https://i.imgur.com/tr5fGmE.jpg",
   },
   {
     id: 2,
     name: "Landing Page",
-    projectCodeLink:
+    codeLink:
       "https://github.com/DarkusPhantom/landing-page-con-unica-seccion-de-introduccin",
-    projectPage:
+    pageLink:
       "https://darkusphantom.github.io/landing-page-con-unica-seccion-de-introduccin",
-    projectCover: "https://i.imgur.com/tr5fGmE.jpg",
+    cover: "https://i.imgur.com/tr5fGmE.jpg",
   },
   {
     id: 3,
     name: "Preview Page of an Article",
-    projectCodeLink:
+    codeLink:
       "https://github.com/DarkusPhantom/reto-componente-de-vista-previa-de-articulo",
-    projectPage:
+    pageLink:
       "https://darkusphantom.github.io/reto-componente-de-vista-previa-de-articulo/",
-    projectCover: "https://i.imgur.com/tr5fGmE.jpg",
+    cover: "https://i.imgur.com/tr5fGmE.jpg",
   },
   /*  {
     id: 4,
     name: "PlatziVideo",
-    projectCodeLink: "https://darkusphantom.github.io/CSS-Grid-Layout/",
-    projectPage:"",
-    projectCover: "https://i.imgur.com/tr5fGmE.jpg",
+    codeLink: "https://darkusphantom.github.io/CSS-Grid-Layout/",
+    pageLink:"",
+    cover: "https://i.imgur.com/tr5fGmE.jpg",
   },*/
 ];
 
-export default ListProjects;
+export default GroupProjects;
 /*<!--
 Signup-TodoAPp
 code: https://github.com/DarkusPhantom/signup-todo-app

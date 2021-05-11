@@ -1,19 +1,15 @@
-.aboutme {
-  display: grid;
+.aboutme .container-grid {
+  grid-template-columns: 28% 1fr 28%;
   grid-template-areas:
     "title title title"
-    "intro photo phrase";
-  grid-gap: 25px;
-  align-items: center;
-  justify-items: center;
-  width: 85%;
-  margin: auto;
+    "intro photo ."
+    ". phrase .";
+  grid-gap: 20px;
 }
 
-.aboutme .title {
+.aboutme .title-section {
   grid-area: title;
   width: 100%;
-  margin: auto;
 }
 
 .aboutme .photo {
@@ -42,4 +38,5 @@
   grid-area: phrase;
   width: 70%;
   line-height: 1.7;
+  margin: 0;
 }

@@ -1,27 +1,20 @@
 /*------------- Proyectos ---------------------*/
-#projects {
-  width: 85%;
-  margin: auto;
+.projects {
   font-size: var(--font-medium);
 }
 
-#projects .title {
-  margin-bottom: 2em;
-}
-
 .project-list {
-  display: grid;
+  display: inherit;
+  /*display: grid;
   grid-template-columns: repeat(3, minmax(20vw, 100%));
-  grid-gap: 30px;
-  justify-content: center;
+  grid-gap: 30px;*/
 }
 
-.project {
-  width: 100%;
+.project-list-item {
+  margin: 0 5px;
   height: min-content;
   cursor: pointer;
   position: relative;
-  display: block;
 }
 
 .project-img {

@@ -1,11 +1,11 @@
 import React from "react";
-import "./css/Hero.css";
+import "./Hero.css";
 
 const Hero = () => {
   return (
     <header className="hero">
-      <div className="profile-name">
-        <h1>Luis Rodriguez</h1>
+      <div className="hero-element">
+        <h1 className="profile-name">Luis Rodriguez</h1>
       </div>
     </header>
   );

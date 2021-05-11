@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
-import Hero from "../components/Hero";
-import Main from "./Main";
+import Hero from "../components/Hero/Hero";
+import Main from "./Main/Main";
 
 const App = () => {
   return (
