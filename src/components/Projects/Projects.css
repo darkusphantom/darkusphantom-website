@@ -5,13 +5,10 @@
 
 .project-list {
   display: inherit;
-  /*display: grid;
-  grid-template-columns: repeat(3, minmax(20vw, 100%));
-  grid-gap: 30px;*/
 }
 
 .project-list-item {
-  margin: 0 5px;
+  width: 100%;
   height: min-content;
   cursor: pointer;
   position: relative;
