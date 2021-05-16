@@ -25,11 +25,6 @@
   object-fit: contain;
 }
 
-.btn-slide button {
-  background: none;
-  border: none;
-}
-
 .btn-slide {
   background-color: aquamarine;
   padding: 10px;

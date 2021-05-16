@@ -1,4 +1,27 @@
-const GroupProjects = [
+import Img1 from "../Assets/img/Landing-Page.png";
+import Img2 from "../Assets/img/Signup-component.png";
+import Img3 from "../Assets/img/Article-View-Preview.png";
+
+const items = [
+  {
+    src: Img1,
+    altText: "Slide 1",
+    caption: "Slide 1",
+  },
+  {
+    src: Img2,
+    altText: "Slide 2",
+    caption: "Slide 2",
+  },
+  {
+    src: Img3,
+    altText: "Slide 3",
+    caption: "Slide 3",
+  },
+];
+export default items;
+
+/*const GroupProjects = [
   {
     id: 1,
     name: "Signup Page",
@@ -30,10 +53,9 @@ const GroupProjects = [
     codeLink: "https://darkusphantom.github.io/CSS-Grid-Layout/",
     pageLink:"",
     cover: "https://i.imgur.com/tr5fGmE.jpg",
-  },*/
-];
+  },
+];*/
 
-export default GroupProjects;
 /*<!--
 Signup-TodoAPp
 code: https://github.com/DarkusPhantom/signup-todo-app
