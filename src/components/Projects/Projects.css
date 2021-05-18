@@ -1,6 +1,7 @@
 /*------------- Proyectos ---------------------*/
 .projects {
   font-size: var(--font-medium);
+  height: 100%;
 }
 
 /*.project-list {

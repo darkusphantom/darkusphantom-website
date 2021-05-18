@@ -5,18 +5,28 @@ import Img3 from "../Assets/img/Article-View-Preview.png";
 const items = [
   {
     src: Img1,
-    altText: "Slide 1",
-    caption: "Slide 1",
+    altText: "Landing Page",
+    caption: "Landing Page",
+    urlCode:
+      "https://github.com/DarkusPhantom/landing-page-con-unica-seccion-de-introduccin",
+    urlPage:
+      "https://darkusphantom.github.io/landing-page-con-unica-seccion-de-introduccin",
   },
   {
     src: Img2,
-    altText: "Slide 2",
-    caption: "Slide 2",
+    altText: "Signup Page",
+    caption: "Signup Page",
+    urlCode: "https://github.com/DarkusPhantom/signup-todo-app",
+    urlPage: "https://tasklist-todoapp.netlify.app/",
   },
   {
     src: Img3,
-    altText: "Slide 3",
-    caption: "Slide 3",
+    altText: "Article View Preview",
+    caption: "Article View Preview",
+    urlCode:
+      "https://github.com/DarkusPhantom/reto-componente-de-vista-previa-de-articulo",
+    urlPage:
+      "https://darkusphantom.github.io/reto-componente-de-vista-previa-de-articulo/",
   },
 ];
 export default items;
@@ -25,26 +35,16 @@ export default items;
   {
     id: 1,
     name: "Signup Page",
-    codeLink: "https://github.com/DarkusPhantom/signup-todo-app",
-    pageLink: "https://tasklist-todoapp.netlify.app/",
     cover: "https://i.imgur.com/tr5fGmE.jpg",
   },
   {
     id: 2,
     name: "Landing Page",
-    codeLink:
-      "https://github.com/DarkusPhantom/landing-page-con-unica-seccion-de-introduccin",
-    pageLink:
-      "https://darkusphantom.github.io/landing-page-con-unica-seccion-de-introduccin",
     cover: "https://i.imgur.com/tr5fGmE.jpg",
   },
   {
     id: 3,
     name: "Preview Page of an Article",
-    codeLink:
-      "https://github.com/DarkusPhantom/reto-componente-de-vista-previa-de-articulo",
-    pageLink:
-      "https://darkusphantom.github.io/reto-componente-de-vista-previa-de-articulo/",
     cover: "https://i.imgur.com/tr5fGmE.jpg",
   },
   /*  {

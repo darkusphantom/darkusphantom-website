@@ -41,6 +41,14 @@ const CarouselProjects = (props) => {
       >
         <img className="project-item-img" src={item.src} alt={item.altText} />
         <CarouselCaption captionText={""} captionHeader={item.caption} />
+        <div className="container-btn container-flex">
+          <a href={item.urlPage} className="btn btn-primary">
+            Ver Proyecto
+          </a>
+          <a href={item.urlCode} className="btn btn-secondary">
+            Ver Código
+          </a>
+        </div>
       </CarouselItem>
     );
   });
