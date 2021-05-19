@@ -69,12 +69,22 @@ button {
   display: flex;
 }
 
+.container-img {
+  max-width: 100%;
+}
+
+.container-img-item {
+  width: 100%;
+  max-height: 350px;
+  object-fit: contain;
+}
+
 .flex-column {
   flex-direction: column;
 }
 
 .title-section {
-  color: var(--color-blueMarine);
+  color: var(--color-white);
   margin: 0 0 1em 0;
   border: 5px dashed var(--color-blueMarine);
   border-inline: none;
