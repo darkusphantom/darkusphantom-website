@@ -1,7 +1,10 @@
+//import FacebookIcon from "../Assets/icons/facebook-brands.svg";
+
 const SocialNetworks = [
   {
     id: 1,
     name: "Facebook",
+    //src: FacebookIcon,
     src:
       "https://about.fb.com/ltam/wp-content/uploads/sites/14/2018/12/Facebook.jpeg?fit=1920%2C1080",
     href: "https://facebook.com/darkusphantom",

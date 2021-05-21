@@ -1,25 +1,36 @@
 /*-------------------------- Contacto -----------------------*/
 .socialNetwork {
-  width: 85%;
+  width: 100%;
+  height: auto;
   margin: 0 auto 10vh auto;
   text-align: center;
 }
 
-.socialNetwork-container {
+.socialNetwork .container-flex {
+  width: 85%;
+  height: auto;
+  margin: 50px auto;
   justify-content: center;
+  align-items: center;
+  border: 1px solid var(--color-blue);
+}
+
+.socialNetwork .container-flex::after,
+.socialNetwork .container-flex::before {
+  content: "-------";
 }
 
 .socialNetwork-item {
-  width: 100%;
-  border: solid var(--color-blue);
-  border-top: none;
-  border-bottom: none;
+  width: 20%;
   padding: 5vh 0;
+  height: auto;
+}
+
+.socialNetwork-item:last-child {
+  border-right: none;
 }
 
 .socialNetwork-item:hover {
-  border: none;
-  color: var(--color-blue);
   background-color: var(--color-white);
 }
 
@@ -28,6 +39,30 @@
   font-size: 1.1rem;
   font-weight: 400;
   letter-spacing: 2px;
+}
+
+.socialNetwork-item:hover .socialNetwork-name {
+  color: var(--color-blue);
+}
+
+.socialNetwork-img {
+  object-fit: cover;
+}
+
+.socialNetwork .container {
+  margin-bottom: 50px;
+}
+
+.socialNetwork > .container h3 {
+  width: max-content;
+  margin: 0 auto 20px auto;
+  border-bottom: 3px solid var(--color-blue);
+}
+
+.socialNetwork > .container p {
+  width: 85%;
+  margin: 0 auto 30px auto;
+  line-height: 1.7;
 }
 
 @media screen and (max-width: 480px) {
