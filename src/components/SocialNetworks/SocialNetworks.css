@@ -55,7 +55,7 @@
 
 .contacts__contactme {
   grid-area: contactme;
-  grid-template-columns: 40% 70vh;
+  grid-template-columns: 50% 70vh;
   grid-template-areas:
     "title image"
     "textInfo image"
@@ -66,11 +66,11 @@
 
 .contacts__blog {
   grid-area: blog;
-  grid-template-columns: 70vh 40%;
+  grid-template-columns: 70vh 50%;
   grid-template-areas:
-    ". title"
-    ". textInfo"
-    ". btn";
+    "image title"
+    "image textInfo"
+    "image btn";
   grid-gap: 20px;
   justify-content: center;
   align-items: center;
@@ -91,9 +91,8 @@
   grid-area: textInfo;
   align-self: center;
   width: 80%;
-  min-width: 380px;
   max-width: 430px;
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.5;
 }
 
