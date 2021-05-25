@@ -34,18 +34,18 @@ const CarouselProjects = (props) => {
   const slides = items.map((item) => {
     return (
       <CarouselItem
-        className="project-item"
+        className="project__item"
         onExiting={() => setAnimating(true)}
         onExited={() => setAnimating(false)}
         key={item.src}
       >
-        <img className="project-item-img" src={item.src} alt={item.altText} />
+        <img className="project__item__img" src={item.src} alt={item.altText} />
         <CarouselCaption captionText={""} captionHeader={item.caption} />
-        <div className="container-btn container-flex">
-          <a href={item.urlPage} className="btn btn-primary">
+        <div className="project__item__btn container-flex">
+          <a href={item.urlPage} className="project__btn btn btn-primary">
             Ver Proyecto
           </a>
-          <a href={item.urlCode} className="btn btn-secondary">
+          <a href={item.urlCode} className="project__btn btn btn-secondary">
             Ver Código
           </a>
         </div>

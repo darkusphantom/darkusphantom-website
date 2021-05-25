@@ -15,8 +15,7 @@
   animation: lightUp 3s;
 }
 
-/*Mi Nombre*/
-.hero-element {
+.hero__container {
   position: absolute;
   top: 100%;
   left: 50%;
@@ -29,7 +28,7 @@
   animation: fadeIn 4s;
 }
 
-.profile-name {
+.hero__title {
   margin: 25px 0;
   font-size: 1.7rem;
   text-align: center;

@@ -6,7 +6,7 @@ import "./SocialNetworks.css";
 function SocialNetwork() {
   return (
     <section className="section section__contacts">
-      <h2 className="title-section">Contáctame</h2>
+      <h2 className="section__title">Contáctame</h2>
       <div className="contacts container-grid">
         <section className="contacts__socialNetwork container-flex">
           {SocialNetworks.map((socialNetwork) => {

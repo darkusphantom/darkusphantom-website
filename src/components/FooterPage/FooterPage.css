@@ -2,6 +2,6 @@
   width: auto;
 }
 
-.footerPage p {
+.footerPage__copyright {
   font-size: 0.9rem;
 }

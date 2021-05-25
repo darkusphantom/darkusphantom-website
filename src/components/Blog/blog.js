@@ -4,7 +4,7 @@ import "./blog.css";
 const Blog = () => {
   return (
     <section className="section section__blog">
-      <h2 className="title-section blog__title">Pásate por mi Blog</h2>
+      <h2 className="section__title blog__title">Pásate por mi Blog</h2>
       <div className="blog container-grid">
         <p className="blog__text">
           Si quieres leer acerca de tecnología, programación, desarrollo web,
