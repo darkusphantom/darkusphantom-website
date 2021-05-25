@@ -16,9 +16,10 @@ function SocialNetwork() {
             return (
               <a
                 href={socialNetwork.href}
-                className="socialNetwork__item"
+                className="socialNetwork__item container-flex"
                 key={socialNetwork.id}
               >
+                <div className="socialNetwork__icon">{socialNetwork.icon}</div>
                 <span id={nameContact} className="socialNetwork__name">
                   {socialNetwork.name}
                 </span>
@@ -46,27 +47,6 @@ function SocialNetwork() {
               className="container-img-item"
               src="https://i.imgur.com/mhUo1hK.png"
               alt="Meme indicando que Trabajemos en Equipo para colaborar con alguien o, trabajar en una empresa o startup"
-            />
-          </div>
-        </section>
-        <section className="contacts__blog container-grid">
-          <h3 className="contacts__title">Pásate por mi Blog</h3>
-          <p className="contacts__text">
-            Si quieres leer acerca de tecnología, programación, desarrollo web,
-            criptomonedas; y todo lo referente a la misma, pásate por mi blog.
-            De seguro encontrarás contenido de utilidad y valor.{" "}
-          </p>
-          <a
-            href="https://darkusphantomblog.wordpress.com/"
-            className="contacts__btn btn btn-primary"
-          >
-            👉 Entra a mi blog aqui 👈
-          </a>
-          <div className="contacts__image container-img">
-            <img
-              className="container-img-item"
-              src="https://i.imgur.com/q3WbiFa.png"
-              alt="Review de mi website mostrando un post"
             />
           </div>
         </section>

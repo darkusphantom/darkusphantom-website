@@ -1,33 +1,31 @@
-//import FacebookIcon from "../Assets/icons/facebook-brands.svg";
+import { ReactComponent as IconFacebook } from "../Assets/icons/facebook-brands.svg";
+import { ReactComponent as IconTwitter } from "../Assets/icons/twitter-square-brands.svg";
+import { ReactComponent as IconLinkdin } from "../Assets/icons/linkedin.svg";
+import { ReactComponent as IconGithub } from "../Assets/icons/github.svg";
 
 const SocialNetworks = [
   {
     id: 1,
     name: "Facebook",
-    //src: FacebookIcon,
-    src:
-      "https://about.fb.com/ltam/wp-content/uploads/sites/14/2018/12/Facebook.jpeg?fit=1920%2C1080",
+    icon: <IconFacebook />,
     href: "https://facebook.com/darkusphantom",
   },
   {
     id: 2,
     name: "Twitter",
-    src:
-      "https://play-lh.googleusercontent.com/fXWKkS5OcyOPZimNU1_lCdOAESs-Hgy53TikRH7cofRLmc4W5HOZySqU6-S7_biQjYM",
+    icon: <IconTwitter />,
     href: "https://twitter.com/DarkusPhantom2",
   },
   {
     id: 3,
     name: "LinkedIn",
-    src:
-      "https://1000marcas.net/wp-content/uploads/2020/01/LinkedIn-emblema.jpg",
+    icon: <IconLinkdin />,
     href: "https://www.linkedin.com/in/darkusphantom/",
   },
   {
     id: 4,
     name: "GitHub",
-    src:
-      "https://github.githubassets.com/images/modules/open_graph/github-mark.png",
+    icon: <IconGithub />,
     href: "https://github.com/DarkusPhantom",
   },
 ];

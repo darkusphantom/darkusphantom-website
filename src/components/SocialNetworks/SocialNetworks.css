@@ -7,11 +7,10 @@
 }
 
 .contacts {
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   grid-template-areas:
     "contactme"
-    "socialNetwork"
-    "blog";
+    "socialNetwork";
   grid-auto-flow: column;
 }
 
@@ -19,17 +18,22 @@
   grid-area: socialNetwork;
   justify-content: center;
   align-items: center;
-  width: 85%;
-  border: 1px solid var(--color-blue);
+  width: 95%;
+  max-width: 915px;
+  min-width: 70%;
+  border: 2px solid var(--color-blue);
+  border-radius: 20px;
 }
 
-.contacts__socialNetwork::after,
+/*.contacts__socialNetwork::after,
 .contacts__socialNetwork::before {
-  content: "-------";
-}
+  content: "----";
+}*/
 
 .socialNetwork__item {
-  width: 20%;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
   padding: 5vh 0;
   height: auto;
 }
@@ -40,6 +44,7 @@
 
 .socialNetwork__item:hover {
   background-color: var(--color-white);
+  border-radius: 20px;
 }
 
 .socialNetwork__name {
@@ -53,9 +58,15 @@
   color: var(--color-blue);
 }
 
+.socialNetwork__icon {
+  width: 100%;
+  max-width: 25%;
+  margin-right: 10px;
+}
+
 .contacts__contactme {
   grid-area: contactme;
-  grid-template-columns: 50% 70vh;
+  grid-template-columns: 50% 60vh;
   grid-template-areas:
     "title image"
     "textInfo image"
@@ -64,22 +75,10 @@
   justify-content: center;
 }
 
-.contacts__blog {
-  grid-area: blog;
-  grid-template-columns: 70vh 50%;
-  grid-template-areas:
-    "image title"
-    "image textInfo"
-    "image btn";
-  grid-gap: 20px;
-  justify-content: center;
-  align-items: center;
-}
-
 .contacts__title {
   grid-area: title;
   align-self: end;
-  width: 95%;
+  width: 75%;
   max-width: 385px;
   padding-bottom: 0.7rem;
   border-bottom: 3px solid var(--color-blue);
@@ -107,5 +106,35 @@
 @media screen and (max-width: 480px) {
   .section__contacts {
     width: auto;
+  }
+  .contacts__contactme,
+  .contacts__blog {
+    grid-template-columns: auto;
+    grid-template-areas:
+      "title"
+      "textInfo"
+      "image"
+      "btn";
+  }
+
+  .contacts__socialNetwork {
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .socialNetwork__item:first-child {
+    border-radius: 18px 18px 0 0;
+  }
+
+  .socialNetwork__item:last-child {
+    border-radius: 0 0 18px 18px;
+  }
+
+  .socialNetwork__icon {
+    max-width: 15%;
+  }
+
+  .socialNetwork__name {
+    display: none;
   }
 }
