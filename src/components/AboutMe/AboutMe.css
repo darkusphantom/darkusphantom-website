@@ -1,4 +1,4 @@
-.aboutme .container-grid {
+.aboutme {
   grid-template-columns: 28% 1fr 28%;
   grid-template-areas:
     "infoProgrammer photo infoBlogger"
@@ -7,45 +7,57 @@
   grid-gap: 20px;
 }
 
-.section-content:not(".photo") {
+.section__content:not(".photo") {
   width: 80%;
   height: 100%;
   line-height: 1.5;
   font-size: 1rem;
 }
 
-.section-content h3 {
+.aboutme__title {
   font-size: 1.4em;
   font-weight: 700;
 }
 
-.aboutme-photo {
+.aboutme__photo {
   grid-area: photo;
 }
 
-.info-programmer {
+.info__programmer {
   grid-area: infoProgrammer;
 }
 
-.info-blogger {
+.info__blogger {
   grid-area: infoBlogger;
 }
 
-.info-blogger h3 {
+.info__blogger h3 {
   padding: 10px 0;
 }
 
-.info-description {
+.info__description {
   grid-area: infoDescription;
   width: 85%;
 }
 
-.info-phrase {
+.info__phrase {
   grid-area: phrase;
   font-size: 0.8rem;
 }
 
-.info-description {
+.info__description {
   width: 85%;
   margin: 0 auto;
+}
+
+@media only screen and (max-width: 480px) {
+  .aboutme {
+    grid-template-columns: auto;
+    grid-template-areas:
+      "photo"
+      "phrase"
+      "infoProgrammer"
+      "infoBlogger"
+      "infoDescription";
+  }
 }

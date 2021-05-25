@@ -5,9 +5,9 @@ import "./FooterPage.css";
 function FooterPage() {
   return (
     <footer className="footerPage">
-      <p>
+      <p className="footerPage__copyright">
         Copyright &copy; | Creado y diseñado por mi,
-        <i>DarkusPhantom (Luis Rodriguez)</i>🌟
+        <i className="autor">DarkusPhantom (Luis Rodriguez)</i>🌟
       </p>
     </footer>
   );

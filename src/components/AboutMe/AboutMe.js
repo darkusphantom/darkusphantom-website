@@ -4,44 +4,44 @@ import "./AboutMe.css";
 
 const AboutMe = () => {
   return (
-    <section className="aboutme space-section">
-      <h2 className="title-section">Acerca de Mi</h2>
-      <div className="container-grid">
-        <div className="section-content aboutme-photo container-img">
+    <section className="section section__aboutme space-section">
+      <h2 className="section__title">Acerca de Mi</h2>
+      <div className="aboutme container-grid">
+        <div className="aboutme__content aboutme__photo container-img">
           <img
-            className="container-img-item"
+            className="container__img__item"
             src="https://i.imgur.com/SImAnNX.jpg"
             alt="Foto del Usuario"
           />
         </div>
-        <div className="section-content info-programmer">
-          <h3>
+        <div className="aboutme__content info__programmer">
+          <h3 className="aboutme__title">
             👨‍💻 FrontEnd
             <br />
             Developer
           </h3>
-          <p>
+          <p className="aboutme__text">
             Creo proyectos personales como desarrollador; mejorando mis
             conocimientos, habilidades como programador y creación de
             herramientas.
           </p>
         </div>
-        <div className="section-content info-blogger">
-          <h3>✍️ Blogger</h3>
-          <p>
+        <div className="aboutme__content info__blogger">
+          <h3 className="aboutme__title">✍️ Blogger</h3>
+          <p className="aboutme__text">
             Escribo en un blog para compartir lo que aprendo, de desarrollo
             personal, tecnología o desarrollo web, para informar, aportar valor
             y motivar a otros.
           </p>
         </div>
-        <div className="section-content info-phrase">
+        <div className="aboutme__content info__phrase">
           <p>
             🌟 <i>Nunca te rindas y supera tus limites</i> 🌟
           </p>
         </div>
       </div>
       <div class="container">
-        <div class="section-content info-description">
+        <div class="aboutme__content info__description">
           <p>
             Me fascina la tecnología y todo lo referente a la misma. Me gusta
             estar en constante aprendizaje, saber cómo funcionan las cosas y el

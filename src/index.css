@@ -1,6 +1,5 @@
 /*-----------    Variables  ---------------*/
 :root {
-  /*Colors*/
   --color-blue: #158ad5;
   --color-blueMarine: rgba(23, 81, 191, 0.88);
   --color-blueClear: rgba(59, 127, 236, 0.88);
@@ -9,21 +8,17 @@
   --color-gray: #222121;
   --color-gray-opacity: rgba(127, 126, 126, 1);
 
-  /*Space*/
   --espaciado: 10px;
   --espaciado-secciones: 10vh;
 
-  /*Font-size*/
   --font-big-bigger: 18px;
   --font-big: 16px;
   --font-medium: 14px;
   --font-small: 12px;
 
-  /*Img Backgrounds*/
   --background-hero: url(https://i.imgur.com/u2XDPbG.png);
 }
 
-/*Especificaciones en General*/
 html,
 html::after,
 html::before {
@@ -83,7 +78,7 @@ button {
   flex-direction: column;
 }
 
-.title-section {
+.section__title {
   color: var(--color-white);
   margin: 0 0 1em 0;
   border: 5px dashed var(--color-blueMarine);
