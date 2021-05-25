@@ -1,0 +1,20 @@
+.aboutme__photo {
+  grid-area: photo;
+}
+
+.info__programmer {
+  grid-area: infoProgrammer;
+}
+
+.info__blogger {
+  grid-area: infoBlogger;
+}
+
+.info__blogger .aboutme__title {
+  padding: 10px 0;
+}
+
+.info__phrase {
+  grid-area: phrase;
+  font-size: 0.8rem;
+}

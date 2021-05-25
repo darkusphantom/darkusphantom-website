@@ -2,9 +2,10 @@
   grid-template-columns: 28% 1fr 28%;
   grid-template-areas:
     "infoProgrammer photo infoBlogger"
-    ". phrase ."
-    "infoDescription infoDescription infoDescription";
+    ". phrase .";
   grid-gap: 20px;
+  width: 85%;
+  margin: auto;
 }
 
 .section__content:not(".photo") {
@@ -19,37 +20,6 @@
   font-weight: 700;
 }
 
-.aboutme__photo {
-  grid-area: photo;
-}
-
-.info__programmer {
-  grid-area: infoProgrammer;
-}
-
-.info__blogger {
-  grid-area: infoBlogger;
-}
-
-.info__blogger h3 {
-  padding: 10px 0;
-}
-
-.info__description {
-  grid-area: infoDescription;
-  width: 85%;
-}
-
-.info__phrase {
-  grid-area: phrase;
-  font-size: 0.8rem;
-}
-
-.info__description {
-  width: 85%;
-  margin: 0 auto;
-}
-
 @media only screen and (max-width: 480px) {
   .aboutme {
     grid-template-columns: auto;
@@ -57,7 +27,6 @@
       "photo"
       "phrase"
       "infoProgrammer"
-      "infoBlogger"
-      "infoDescription";
+      "infoBlogger";
   }
 }
