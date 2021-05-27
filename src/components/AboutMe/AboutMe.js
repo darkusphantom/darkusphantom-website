@@ -3,6 +3,7 @@ import React from "react";
 import "./AboutMe.css";
 import AboutMeIntro from "../AboutMeIntro/AboutMeIntro";
 import AboutMeDescription from "../AboutMeDescription/AboutMeDescription";
+import ProgrammingLanguaje from "../ProgrammingLanguaje/ProgrammingLanguaje";
 
 const AboutMe = () => {
   return (
@@ -13,6 +14,7 @@ const AboutMe = () => {
           <AboutMeIntro />
         </div>
         <AboutMeDescription />
+        <ProgrammingLanguaje />
       </div>
     </section>
   );
