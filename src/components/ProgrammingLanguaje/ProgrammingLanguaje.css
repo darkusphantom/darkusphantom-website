@@ -1,9 +1,16 @@
 .aboutme__programmingLanguaje {
-  grid-template: repeat(2, 15vh) / repeat(3, 1fr);
-  grid-gap: 10px;
+  grid-template: 50px repeat(2, 15vh) / repeat(3, minmax(17%, 20%));
+  grid-gap: 5px;
+  justify-content: right;
   align-items: center;
-  width: 50%;
-  margin: auto;
+  margin: 5vh auto;
+}
+
+.aboutme__programmingLanguaje .aboutme__title {
+  grid-column: 1 / span 3;
+  border-bottom: 3px solid var(--color-blueMarine);
+  font-size: 1.3rem;
+  text-transform: uppercase;
 }
 
 .box__programmingLanguaje {

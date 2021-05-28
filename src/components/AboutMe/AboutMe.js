@@ -9,10 +9,8 @@ const AboutMe = () => {
   return (
     <section className="section section__aboutme space-section">
       <h2 className="section__title">Acerca de Mi</h2>
-      <div className="container">
-        <div className="aboutme container-grid">
-          <AboutMeIntro />
-        </div>
+      <div className="aboutme container">
+        <AboutMeIntro />
         <AboutMeDescription />
         <ProgrammingLanguaje />
       </div>

@@ -1,4 +1,10 @@
 .info__description {
   width: 85%;
-  margin: 0 auto;
+  margin: 5vh auto;
+}
+
+.aboutme__text__description:last-child {
+  width: 50%;
+  margin: 20vh 0;
+  text-align: left;
 }

@@ -4,7 +4,7 @@ import "./AboutMeIntro.css";
 
 const AboutMeIntro = () => {
   return (
-    <Fragment>
+    <div className="aboutme__intro container-grid">
       <div className="aboutme__content aboutme__photo container-img">
         <img
           className="container-img-item"
@@ -37,7 +37,7 @@ const AboutMeIntro = () => {
           🌟 <i>Nunca te rindas y supera tus limites</i> 🌟
         </p>
       </div>
-    </Fragment>
+    </div>
   );
 };
 

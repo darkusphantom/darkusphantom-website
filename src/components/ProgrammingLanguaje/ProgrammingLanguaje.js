@@ -32,6 +32,7 @@ const ProgrammingLanguaje = () => {
 
   return (
     <div className="aboutme__programmingLanguaje container-grid">
+      <h3 className="aboutme__title">Mis Herramientas</h3>
       {programmingLanguajes.map((languaje) => {
         return (
           <div className="box__programmingLanguaje" key={languaje.id}>
