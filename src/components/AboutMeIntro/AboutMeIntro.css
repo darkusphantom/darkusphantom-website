@@ -27,3 +27,30 @@
   grid-area: phrase;
   font-size: 0.8rem;
 }
+
+@media only screen and (max-width: 480px) {
+  .aboutme__intro {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "photo"
+      "phrase"
+      "infoProgrammer"
+      "infoBlogger";
+  }
+
+  .info__programmer {
+    width: 90%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+  }
+
+  .info__blogger {
+    width: 90%;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+  }
+}
