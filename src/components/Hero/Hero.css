@@ -31,11 +31,18 @@
 .hero__title {
   margin: 25px 0;
   font-size: 1.7rem;
+  font-weight: 700;
   text-align: center;
   text-transform: uppercase;
   text-shadow: 0 5px 11px var(--color-gray);
   letter-spacing: 10px;
   animation: showUp 4s;
+}
+
+@media screen and (max-width: 480px) {
+  .hero__title {
+    font-size: 1.2rem;
+  }
 }
 
 @keyframes fadeIn {
