@@ -1,3 +1,16 @@
+.fadeIn {
+  animation-name: fadeIn;
+  -webkit-animation-name: fadeIn;
+
+  animation-duration: 1.5s;
+  -webkit-animation-duration: 1.5s;
+
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
+
+  visibility: visible !important;
+}
+
 .hero {
   position: relative;
   width: 100%;
@@ -13,6 +26,7 @@
   background-position: center center;
   background-size: cover;
   animation: lightUp 3s;
+  -webkit-animation: lightUp 3s;
 }
 
 .hero__container {
@@ -25,7 +39,6 @@
   border-radius: 20px;
   box-shadow: 1px 1px 10px var(--color-blue);
   transform: translate(-50%, -50%);
-  animation: fadeIn 4s;
 }
 
 .hero__title {
@@ -36,7 +49,6 @@
   text-transform: uppercase;
   text-shadow: 0 5px 11px var(--color-gray);
   letter-spacing: 10px;
-  animation: showUp 4s;
 }
 
 @media screen and (max-width: 480px) {
@@ -48,29 +60,56 @@
   }
 }
 
-@keyframes fadeIn {
-  from {
-    width: 0%;
-  }
-  to {
-    width: 60%;
-  }
-}
-
-@keyframes showUp {
-  from {
-    font-size: 0;
-  }
-  to {
-    font-size: 1.7rem;
-  }
-}
-
 @keyframes lightUp {
   from {
     filter: brightness(0);
   }
   to {
     filter: brightness(1);
+  }
+}
+
+@-webkit-keyframes lightUp {
+  from {
+    -webkit-filter: brightness(0);
+  }
+  to {
+    -webkit-filter: brightness(1);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.1);
+  }
+  80% {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    -webkit-transform: scale(0);
+    opacity: 0;
+  }
+  60% {
+    -webkit-transform: scale(1.1);
+  }
+  80% {
+    -webkit-transform: scale(0.9);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    opacity: 1;
   }
 }

@@ -8,7 +8,7 @@ const SocialNetworkElements = ({ name, icon, href }) => {
 
   return (
     <a href={href} className="socialNetwork__item container-flex">
-      <div className="socialNetwork__icon">{icon}</div>
+      <div className="socialNetwork__icon pulse">{icon}</div>
       <span id={nameContact} className="socialNetwork__name">
         {name}
       </span>
