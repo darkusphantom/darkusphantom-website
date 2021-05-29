@@ -16,7 +16,8 @@
   --font-medium: 14px;
   --font-small: 12px;
 
-  --background-hero: url(https://i.imgur.com/u2XDPbG.png);
+  --background-hero-desktop: url(https://i.imgur.com/u2XDPbG.png);
+  --background-hero-movil: url(https://images.unsplash.com/photo-1551033406-611cf9a28f67?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cHJvZ3JhbW1lcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
 }
 
 html,

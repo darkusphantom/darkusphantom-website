@@ -8,7 +8,7 @@
       rgba(0, 0, 0, 0.1),
       rgba(0, 0, 0, 0.5)
     ),
-    var(--background-hero);
+    var(--background-hero-desktop);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -40,6 +40,9 @@
 }
 
 @media screen and (max-width: 480px) {
+  .hero {
+    background-image: var(--background-hero-movil);
+  }
   .hero__title {
     font-size: 1.2rem;
   }
