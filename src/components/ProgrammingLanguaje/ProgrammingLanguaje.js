@@ -9,7 +9,7 @@ const ProgrammingLanguaje = () => {
       <h3 className="aboutme__title">Mis Herramientas</h3>
       {ProgrammingLanguajes.map((languaje) => {
         return (
-          <div className="box__programmingLanguaje" key={languaje.id}>
+          <div className="box__programmingLanguaje tossing" key={languaje.id}>
             <span className="programmingLanguaje">{languaje.name}</span>
           </div>
         );
