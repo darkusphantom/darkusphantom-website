@@ -5,7 +5,7 @@ import ProgrammingLanguajes from "../../data/ProgrammingLanguajes";
 
 const ProgrammingLanguaje = () => {
   return (
-    <div className="aboutme__programmingLanguaje container-grid">
+    <div className="aboutme__programmingLanguaje aboutme__content container-grid">
       <h3 className="aboutme__title">Mis Herramientas</h3>
       {ProgrammingLanguajes.map((languaje) => {
         return (
