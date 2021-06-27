@@ -6,7 +6,7 @@ const Blog = () => {
     <section className="section section__blog space-section">
       <h2 className="section__title blog__title">Pásate por mi Blog</h2>
       <div className="blog container-grid">
-        <p className="blog__text">
+        <p className="text">
           Si quieres leer acerca de tecnología, programación, desarrollo web,
           criptomonedas; y todo lo referente a la misma, pásate por mi blog. De
           seguro encontrarás contenido de utilidad y valor.{" "}

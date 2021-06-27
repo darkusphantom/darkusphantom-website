@@ -1,7 +1,7 @@
 .aboutme__intro {
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas: "infoProgrammer photo infoBlogger";
-  grid-gap: 20px;
+  gap: 20px;
 }
 
 .aboutme__photo {
@@ -14,10 +14,6 @@
 
 .info__blogger {
   grid-area: infoBlogger;
-}
-
-.info__blogger .aboutme__title {
-  padding: 10px 0;
 }
 
 .aboutme__phrase {

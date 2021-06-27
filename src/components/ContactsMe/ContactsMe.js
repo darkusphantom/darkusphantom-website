@@ -5,8 +5,10 @@ import "./ContactsMe.css";
 const ContactsMe = () => {
   return (
     <section className="contacts__contactme container-grid">
-      <h3 className="contacts__title">¿Buscas a alguien con quien trabajar?</h3>
-      <p className="contacts__text">
+      <h3 className="title title-bg title-skrew">
+        ¿Buscas a alguien con quien trabajar?
+      </h3>
+      <p className="text">
         Si buscas a alguien para colaborar, o practicar, en algun proyecto, las
         puertas están abiertas. <br />
         Con mucho gusto estaría encantado de trabajar contigo.

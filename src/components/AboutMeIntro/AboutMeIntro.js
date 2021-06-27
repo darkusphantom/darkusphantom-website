@@ -18,20 +18,20 @@ const AboutMeIntro = () => {
         </p>
       </div>
       <div className="info__programmer">
-        <h3 className="aboutme__title">
+        <h3 className="title title-bg title-skrew">
           👨‍💻 FrontEnd
           <br />
           Developer
         </h3>
-        <p className="aboutme__text">
+        <p className="text">
           Creo proyectos personales como desarrollador; mejorando mis
           conocimientos, habilidades como programador y creación de
           herramientas.
         </p>
       </div>
       <div className="info__blogger">
-        <h3 className="aboutme__title">✍️ Blogger</h3>
-        <p className="aboutme__text">
+        <h3 className="title title-bg title-skrew">✍️ Blogger</h3>
+        <p className="text">
           Escribo en un blog para compartir lo que aprendo, de desarrollo
           personal, tecnología o desarrollo web, para informar, aportar valor y
           motivar a otros.

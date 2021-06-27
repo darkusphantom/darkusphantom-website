@@ -7,21 +7,9 @@
   margin: 0 auto 150px auto;
 }
 
-.aboutme__title {
-  font-size: 1.4em;
-  font-weight: 700;
-  background: var(--color-blue);
-  border-radius: 5px;
-  transform: skew(-10deg, 0);
-  text-align: center;
-}
-
-.aboutme__text {
+.aboutme .text {
   width: 90%;
   margin: 0 auto;
-  font-size: 0.85rem;
-  text-align: center;
-  line-height: 1.5;
 }
 
 @media screen and (max-width: 480px) {

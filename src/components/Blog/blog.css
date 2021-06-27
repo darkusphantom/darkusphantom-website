@@ -8,13 +8,11 @@
   align-items: center;
 }
 
-.blog__text {
+.blog .text {
   grid-area: textInfo;
   align-self: center;
   width: 80%;
   max-width: 430px;
-  font-size: 1rem;
-  line-height: 1.5;
 }
 
 .blog__image {

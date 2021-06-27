@@ -19,9 +19,7 @@ const AboutMeDescription = () => {
             height="350"
           />
         </div>
-        <p className="aboutme__text img__text">
-          En cada objetivo, busco superarme 👊
-        </p>
+        <p className="text img__text">En cada objetivo, busco superarme 👊</p>
       </div>
     </div>
   );
@@ -31,7 +29,7 @@ export default AboutMeDescription;
 
 /* TODO
 Me fascina la tecnología y todo lo referente a la misma.
-      <p className="aboutme__text aboutme__text__description">
+      <p className="text aboutme__text__description">
         En cada objetivo que me propongo, busco superarme. Quiero sacar la mejor
         version mi, tanto a nivel personal como profesional, y alcanzar mis
         metas mientras impulso, inspiro y motivo, a otros, con lo que aprendo y
