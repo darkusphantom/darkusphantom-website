@@ -42,6 +42,14 @@
     grid-template: 50px repeat(2, 22vh) / repeat(3, minmax(35%, 40%));
     justify-content: center;
   }
+
+  .box__programmingLanguaje {
+    padding: 20px 5px;
+  }
+
+  .box__programmingLanguaje span {
+    font-size: .7rem;
+  }
 }
 
 @keyframes tossing {
