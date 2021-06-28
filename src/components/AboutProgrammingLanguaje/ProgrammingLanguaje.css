@@ -5,11 +5,8 @@
   align-items: center;
 }
 
-.aboutme__programmingLanguaje .aboutme__title {
+.aboutme__programmingLanguaje .title {
   grid-column: 1 / span 3;
-  border-bottom: 3px solid var(--color-blueMarine);
-  font-size: 1.3rem;
-  text-transform: uppercase;
 }
 
 .box__programmingLanguaje {
@@ -48,7 +45,7 @@
   }
 
   .box__programmingLanguaje span {
-    font-size: .7rem;
+    font-size: 0.7rem;
   }
 }
 

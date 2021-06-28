@@ -6,7 +6,7 @@ import ProgrammingLanguajes from "../../data/ProgrammingLanguajes";
 const ProgrammingLanguaje = () => {
   return (
     <div className="aboutme__programmingLanguaje aboutme__content container-grid">
-      <h3 className="aboutme__title">Mis Herramientas</h3>
+      <h3 className="title title-bg title-skrew">Mis Herramientas</h3>
       {ProgrammingLanguajes.map((languaje) => {
         return (
           <div className="box__programmingLanguaje tossing" key={languaje.id}>

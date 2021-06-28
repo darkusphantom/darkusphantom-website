@@ -15,7 +15,7 @@ const Blog = () => {
           href="https://darkusphantomblog.wordpress.com/"
           className="blog__btn btn btn-primary"
         >
-          👉 Entra a mi blog aqui 👈
+          👉 Visitar mi blog 👈
         </a>
         <div className="blog__image container-img">
           <img

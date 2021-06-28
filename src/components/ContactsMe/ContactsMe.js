@@ -17,7 +17,7 @@ const ContactsMe = () => {
         href="https://t.me/darkusphantomchannel"
         className="contacts__btn btn btn-primary"
       >
-        👉 Contáctame aqui 👈
+        👉 Contáctame 👈
       </a>
       <div className="contacts__image container-img">
         <img
