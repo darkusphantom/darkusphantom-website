@@ -1,0 +1,24 @@
+{
+  "name": "darkusphantom-website",
+  "version": "2.0.0",
+  "description": "Mi website donde colocare mis post para el blog, mi portafolio y para que puedan contactarme",
+  "main": "src/js/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darkusphantom/darkusphantom-website.git"
+  },
+  "keywords": [
+    "Blog",
+    "Portafolio",
+    "Website"
+  ],
+  "author": "Luis Rodriguez - DarkusPhantom <darkusphantom13@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/darkusphantom/darkusphantom-website/issues"
+  },
+  "homepage": "https://github.com/darkusphantom/darkusphantom-website#readme"
+}
