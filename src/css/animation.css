@@ -1,0 +1,27 @@
+.showNavMobile {
+	animation-name: showNavMobile;
+	animation-duration: .25s;
+}
+
+.hiddenNavMobile {
+	animation-name: hiddenNavMobile;
+	animation-duration: .25s;
+}
+
+@keyframes showNavMobile {
+	from {
+		left: 100vw;
+	}
+	to {
+		left: 0;
+	}
+}
+
+@keyframes hiddenNavMobile {
+	from {
+		left: 0vw;
+	}
+	to {
+		left: 100vw;
+	}
+}

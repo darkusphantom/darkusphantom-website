@@ -8,11 +8,14 @@
 	--blueClear: hsl(204deg, 54%, 63%);
 	--blueDark: hsl(204deg, 54%, 45%);
 	--green: hsl(148deg, 64%, 58%);
+	--red: #f44336;
+    --greenToBlue: linear-gradient(var(--green), var(--blue));
+    --blueToGreen: linear-gradient(var(--blue), var(--green));
 
 	--bg-header: var(--blue);
 	--bg-body: var(--white);
-	--bg-aboutMe: var(--blue);
-	--bg-contacts: var(--green);
+	--bg-aboutMe: var(--blueToGreen);
+	--bg-contacts: var(--greenToBlue);
 	--bg-footer: var(--black);
 	--bg-btn-burger: var(--white);
 
@@ -32,26 +35,9 @@
 body {
 	margin: 0;
 	background: var(--bg-body);
-	font-size: var(--text-medium);
+	font-size: var(--text-large);
 	font-family: var(--principalFont);
-}
-
-section.menu {
-	width: 100vw;
-	height: 100vh;
-	background: var(--black);
-	display: none;
-	position: absolute;
-	top: 50%;
-	left: -50%;
-	transform: translate(50%, -50%);
-	transition: left .25s;
-	will-change: left;
-	z-index: 2;
-}
-
-section.menu:hover {
-	left: 50%;
+	overflow-x: hidden;
 }
 
 .container {
@@ -72,44 +58,56 @@ section.menu:hover {
 	object-fit: cover;
 }
 
-.title {
-	text-align: center;
+.container__nav {
+	display: flex;
+	list-style: none;
 }
 
-.title--l {
-	font-size: var(--title-large);
+.nav--mobile {
+	width: 100vw;
+	height: 100vh;
+	background: var(--black);
+	display: none;
+	position: absolute;
+	top: 0;
+	will-change: left;
+	z-index: 2;
 }
 
-.title--m {
-	font-size: var(--title-medium);
+.nav--mobile .container__nav {
+	flex-direction: column;
+	padding: 2em 2em 0 2em;
 }
 
-.title--sm {
-	font-size: var(--title-small);
+.nav__list {
+	border-bottom: 2px solid var(--white);
+	padding: 10px 15px 5px 0;
+	margin-bottom: 30px;
+	position: relative;
 }
 
-.title--black {
+.nav__list:hover {
+	background: var(--white);
+}
+
+.nav__list:hover a {
 	color: var(--black);
 }
 
-.title--white {
+.nav__list a {
 	color: var(--white);
+	text-decoration: none;
 }
 
-.text--xl {
-	font-size: var(--text-xl);
+.nav__list a::after {/*◀*/
+	position: absolute;
+	top: 20%;
+	left: 15px;
+	content: '▶';
 }
 
-.text--l {
-	font-size: var(--text-large);
-}
-
-.text--m {
-	font-size: var(--text-medium);
-}
-
-.text--sm {
-	font-size: var(--text-small);
+.nav__list--mobile {
+	text-align: right;
 }
 
 .form {
@@ -170,24 +168,49 @@ section.menu:hover {
 	font-size: 0.5rem;
 }
 
-.btn--burger {
+.btn--mobile {
 	width: 30px;
 	grid-column: 3;
 	justify-self: flex-end;
 	align-self: center;
-	margin-right: 20%;
 }
 
-.btn--burger span{
+.btn--mobile span {
 	display: block;
 	width: 100%;
 	height: 5px;
 	border-radius: 25px;
 	background: var(--bg-btn-burger);
+}
+
+.btn--burger {
+	margin-right: 20%;
+}
+
+.btn--burger span{
 	margin-bottom: 5px;
 }
 
-.btn--burger:hover {
+.btn--close {
+	position: absolute;
+	bottom: 30px;
+	right: 30px;
+}
+
+.btn--close span {
+	position: absolute;
+}
+
+.btn--close span:first-child {
+	transform: rotate(45deg);
+}
+
+.btn--close span:last-child {
+	transform: rotate(316deg);
+}
+
+.btn--burger:hover,
+.btn--close:hover {
 	cursor: pointer;
 }
 
@@ -202,6 +225,10 @@ section.menu:hover {
 	font-weight: 400;
 	transition: width .25s;
 	will-change: width;
+}
+
+.input--error {
+	border-bottom: 2px solid var(--red) !important;
 }
 
 .input:focus {
@@ -233,6 +260,48 @@ section.menu:hover {
 	color: var(--green);
 }
 
+.title {
+	text-align: center;
+}
+
+.title--l {
+	font-size: var(--title-large);
+}
+
+.title--m {
+	font-size: var(--title-medium);
+}
+
+.title--sm {
+	font-size: var(--title-small);
+}
+
+.title--black {
+	color: var(--black);
+}
+
+.title--white {
+	color: var(--white);
+}
+
+.text--xl {
+	font-size: var(--text-xl);
+}
+
+.text--l {
+	font-size: var(--text-large);
+}
+
+.text--m {
+	font-size: var(--text-medium);
+}
+
+.text--sm {
+	font-size: var(--text-small);
+}
+
+
+
 
 .header--principal {
 	width: 100%;
@@ -242,6 +311,9 @@ section.menu:hover {
 	align-items: center;
 	justify-content: center;
 	background: var(--bg-header);
+	position: fixed;
+	top: 0;
+	z-index: 1;
 }
 
 .header--principal .title {
@@ -251,8 +323,7 @@ section.menu:hover {
 }
 
 .intro {
-	height: 270px;
-	padding: 10px 0 25px 0;
+	padding: 10vh 0 3em 0;
 	color:  var(--black);
 }
 
@@ -279,14 +350,14 @@ section.menu:hover {
 
 .intro > .container p:nth-child(3) {
 	grid-row: 6;
-	width: 85%;
+	width: 80%;
 }
 
 .intro > .container .container__img {
 	grid-row: 2 / span 5;
 	grid-column: 2;
 	width: 120px;
-	max-height: 120px;
+	height: 120px;
 	margin: 0 auto;
 	border-radius: 45px 10px 30px 30px;
 }
