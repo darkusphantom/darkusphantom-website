@@ -13,7 +13,6 @@
 
 		if(!isShowMenu(menuMobile)) {
 			menuMobile.display = 'block';
-			menuMobile.animation = 'showNavMobile .25s';
 			document.body.style.overflowY = 'hidden';
 		}
 	});
@@ -23,7 +22,6 @@
 		const menuMobile = document.querySelector('#menu-mobile').style;
 
 		if(isShowMenu(menuMobile)) {
-			menuMobile.animation = 'hiddenNavMobile .25s';
 			setTimeout(() => {
 				menuMobile.display = 'none';
 				document.body.style.overflowY = ''

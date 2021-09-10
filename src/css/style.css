@@ -60,29 +60,27 @@ body {
 
 .container__nav {
 	display: flex;
+	flex-direction: column;
 	list-style: none;
-}
-
-.nav--mobile {
 	width: 100vw;
 	height: 100vh;
+	padding: 25px 0 0 0;
+	margin: 0;
 	background: var(--black);
-	display: none;
 	position: absolute;
 	top: 0;
 	will-change: left;
 	z-index: 2;
 }
 
-.nav--mobile .container__nav {
-	flex-direction: column;
-	padding: 2em 2em 0 2em;
+.nav--mobile {
+	display: none;
 }
 
 .nav__list {
 	border-bottom: 2px solid var(--white);
 	padding: 10px 15px 5px 0;
-	margin-bottom: 30px;
+	margin: 0 10px 30px 10px;
 	position: relative;
 }
 
@@ -193,8 +191,9 @@ body {
 
 .btn--close {
 	position: absolute;
-	bottom: 30px;
+	bottom: calc(100% - 90vh);
 	right: 30px;
+	z-index: 2;
 }
 
 .btn--close span {
@@ -517,6 +516,10 @@ body {
 	color: var(--white);
 	text-align: center;
 	padding: 20px 0 35px 0;
+}
+
+.contacts section {
+	margin-bottom: 25px;
 }
 
 .contacts .container{
