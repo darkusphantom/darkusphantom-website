@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>DarkusPhantom</title>
 	<link rel="stylesheet" href="./src/css/style.css" media="all">
+	<link rel="stylesheet" href="./src/css/responsive.css">
 	<link rel="stylesheet" href="./src/css/animation.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,16 +21,16 @@
 		</a>
 		<nav id="menu-mobile" class="nav nav--mobile">
 			<ul class="container__nav">
-				<li class="nav__list nav__list--mobile">
+				<li class="nav__list">
 					<a href="#" class="text--xl">Inicio</a>
 				</li>
-				<li class="nav__list nav__list--mobile">
+				<li class="nav__list">
 					<a href="#" class="text--xl">Portafolio</a>
 				</li>
-				<li class="nav__list nav__list--mobile">
+				<li class="nav__list">
 					<a href="#" class="text--xl">Contacto</a>
 				</li>
-				<li class="nav__list nav__list--mobile">
+				<li class="nav__list">
 					<a href="#" class="text--xl">Acerca de Mi</a>
 				</li>
 			</ul>
@@ -42,13 +43,13 @@
 
 	<section class="intro">
 		<div class="container">
-			<p class="text--l">Frontend Developer</p>
-			<p class="text--m">Luis Rodriguez</p>
-			<p class="text--sm"> Un programador que crea contenido para compartir su conocimiento de dia y lucha de noche escribiendo codigo para llegar hasta llegar las estrellas 💻⭐</p>
+			<p class="intro__text intro__text--jobTitle">Frontend Developer</p>
+			<p class="intro__text intro__text--name">Luis Rodriguez</p>
+			<p class="intro__text intro__text--description">💻 Un programador que crea contenido para compartir su conocimiento de dia y lucha de noche escribiendo codigo para llegar hasta llegar las estrellas⭐</p>
 			<div class="container__img">
 				<img src="https://i.imgur.com/leP94gM.jpg" alt="Foto de Perfil" loading="lazy">
 			</div>
-			<p class="phrase text-sm">Nunca te rindas y Supera tus limites 🔥⭐🔥</p>
+			<p class="intro__phrase text-sm">Nunca te rindas y Supera tus limites 🔥⭐🔥</p>
 		</div>
 	</section>
 
@@ -87,50 +88,48 @@
 		<div class="container">
 			<h2 class="title title--m">Mejores Proyectos</h2>
 			<div class="container--projects">
-				<div class="project">
-					<img src="https://i.imgur.com/HYBpMo1.png" alt="Proyecto: Landing Page con unica seccion" width="130" height="100" loading="lazy">
-					<span>
+				<li class="project__container">
+					<figure class="project">
+						<img src="https://i.imgur.com/vVWMCCf.png" alt="Proyecto: Landing Page con unica seccion" width="130" height="100" loading="lazy">
+						<figcaption class="project__title">Landing Page</figcaption>
+					</figure>
+					<div class="project__container__btn">
 						<a href="https://darkusphantom.github.io/landing-page-con-unica-seccion-de-introduccin/" class="btn btn--link btn--hover" target="_blank">Ir a la página</a>
 						<a href="https://github.com/darkusphantom/landing-page-con-unica-seccion-de-introduccin" class="btn btn--link btn--hover" target="_blank">Ir al código</a>
-					</span>
-				</div>
-				<div class="project">
-					<img src="https://i.imgur.com/kA1NIIn.png" alt="Proyecto: Componente de Vista Previa" width="130" height="100" loading="lazy">
-					<span>
+					</div>
+				</li>
+				<li class="project__container">
+					<figure class="project">
+						<img src="https://i.imgur.com/kA1NIIn.png" alt="Proyecto: Componente de Vista Previa" width="130" height="100" loading="lazy">
+						<figcaption class="project__title">Componente de Vista Previa</figcaption>
+					</figure>
+					<div class="project__container__btn">
 						<a href="https://darkusphantom.github.io/reto-componente-de-vista-previa-de-articulo/" class="btn btn--link btn--hover" target="_blank">Ir a la página</a>
 						<a href="https://github.com/darkusphantom/reto-componente-de-vista-previa-de-articulo" class="btn btn--link btn--hover" target="_blank">Ir al código</a>
-					</span>
-				</div>
-				<div class="project">
-					<img src="https://i.imgur.com/Y6f5PIh.png" alt="Proyecto: Seccion de cuatro cartas" width="130" height="100" loading="lazy">
-					<span>
+					</div>
+				</li>
+				<li class="project__container">
+					<figure class="project">
+						<img src="https://i.imgur.com/Y6f5PIh.png" alt="Proyecto: Seccion de cuatro cartas" width="130" height="100" loading="lazy">
+						<figcaption class="project__title">Seccion de Cuatro Cartas</figcaption>
+					</figure>
+					<div class="project__container__btn">
 						<a href="https://github.com/darkusphantom/seccion-de-cuatro-cartas" class="btn btn--link btn--hover" target="_blank">Ir a la página</a>
 						<a href="https://github.com/darkusphantom/seccion-de-cuatro-cartas" class="btn btn--link btn--hover" target="_blank">Ir al código</a>
-					</span>
-				</div>
-				<div class="project">
-					<img src="https://i.imgur.com/o3Enn7E.png" alt="Proyecto: Coding-Bootcamp-Testimonials-Slider" width="130" height="100" loading="lazy">
-					<span>
+					</div>
+				</li>
+				<li class="project__container">
+					<figure class="project">
+						<img src="https://i.imgur.com/o3Enn7E.png" alt="Proyecto: Coding-Bootcamp-Testimonials-Slider" width="130" height="100" loading="lazy">
+						<figcaption class="project__title">Testimonial Slider</figcaption>
+					</figure>
+					<div class="project__container__btn">
 						<a href="https://darkusphantom.github.io/Coding-Bootcamp-Testimonials-Slider/" class="btn btn--link btn--hover" target="_blank">Ir a la página</a>
 						<a href="https://github.com/darkusphantom/Coding-Bootcamp-Testimonials-Slider" class="btn btn--link btn--hover" target="_blank">Ir al código</a>
-					</span>
-				</div>
-				<div class="project">
-					<img src="https://i.imgur.com/vVWMCCf.png" alt="Proyecto: Signup" width="130" height="100" loading="lazy">
-					<span>
-						<a href="https://tasklist-todoapp.netlify.app/" class="btn btn--link btn--hover" target="_blank">Ir a la página</a>
-						<a href="https://github.com/darkusphantom/signup-todo-app" class="btn btn--link btn--hover" target="_blank">Ir al código</a>
-					</span>
-				</div>
-				<div class="project">
-					<img src="https://i.imgur.com/c1ddT7E.png" alt="" width="130" height="100" loading="lazy">
-					<span>
-						<a href="" class="btn btn--link btn--hover" target="_blank">Ir a la página</a>
-						<a href="" class="btn btn--link btn--hover" target="_blank">Ir al código</a>
-					</span>
-				</div>
+					</div>
+				</li>
 			</div>
-			<a href="#" class="btn btn--primary btn--link" target="_blank">Ir a Proyectos</a>
+			<a href="#" class="btn btn--primary btn--link">Ir a Proyectos</a>
 			<a href="https://github.com/darkusphantom" class="btn btn--secundary btn--link" target="_blank">Ir a Github</a>
 		</div>
 	</section>
@@ -139,12 +138,12 @@
 		<div class="container">
 			<section class="contacts__blog">
 				<h3 class="title title--m ">Visita mi Blog</h3>
-				<p>Hablo acerca de tecnología, desarrollo personal, productividad, herramientas que puedan ayudar al usuario y mucho más 🙌</p>
+				<p class="contacts__blog__text">Hablo acerca de tecnología, desarrollo personal, productividad, herramientas que puedan ayudar al usuario y mucho más 🙌</p>
 				<a href="https://darkusphantomblog.wordpress.com/" class="btn btn--link">Ir al Blog</a>
 			</section>
 			<!--<section class="contacts__send-email">
 				<h3 class="title title--m ">Enviame un correo</h3>
-				<form action="send.php" class="form form-email" method="post">
+				<form class="form form-email">
 					<div class="container">
 						<input type="email" class="input input--text" id="input-email" name="input-email" placeholder="Ingresa tu correo">
 						<input type="text" class="input input--text" id="input-subject" name="input-subject" placeholder="Escribe el asunto">

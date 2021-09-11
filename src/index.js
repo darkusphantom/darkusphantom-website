@@ -1,4 +1,5 @@
 (function() {
+	//Menu
 	const isShowMenu = (menu) => {
 		let isShow;
 		menu.display === 'block'
@@ -13,7 +14,6 @@
 
 		if(!isShowMenu(menuMobile)) {
 			menuMobile.display = 'block';
-			menuMobile.animation = 'showNavMobile .25s';
 			document.body.style.overflowY = 'hidden';
 		}
 	});
@@ -23,7 +23,6 @@
 		const menuMobile = document.querySelector('#menu-mobile').style;
 
 		if(isShowMenu(menuMobile)) {
-			menuMobile.animation = 'hiddenNavMobile .25s';
 			setTimeout(() => {
 				menuMobile.display = 'none';
 				document.body.style.overflowY = ''
@@ -32,7 +31,35 @@
 		}
 	});
 
+	//Projects
+	const projects = document.querySelector('.container--projects');
+	projects.addEventListener('click',(event) => {
+		event.preventDefault();
 
+		const project = event.target.parentElement;
+		const projectBtnContainer = project.nextElementSibling;
+		const projects = event.target.parentElement.parentElement.parentElement.children;
+		const projectHiddenModal = () => {
+			for (var i = 0; i < projects.length; i++) {
+				const projectImg = projects[i].children[0];
+				const projectBtn = projects[i].children[1];
+
+				projectImg.style.filter = 'brightness(1)';
+				projectBtn.style.visibility = 'hidden';
+
+			}
+		}
+
+		if(project.classList.contains('project')) {
+			projectHiddenModal();
+			project.style.filter = 'brightness(0.5)';
+			projectBtnContainer.style.visibility = 'visible';
+		}
+	})
+
+
+	//Email
+	/*
 	const isInputEmpty = (input) => {
 		let isEmpty;
 		input.value.length <= 0
@@ -63,4 +90,5 @@
 
 		verifyIsInputEmpty();
 	});
+	*/
 })();
