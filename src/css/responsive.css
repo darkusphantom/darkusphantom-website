@@ -78,13 +78,18 @@
 	}
 
 	.intro__text--description {
-		font-size: var(--text-medium);
 		grid-row: 7;
 	}
 
 	.intro__phrase {
-		font-size: var(--text-medium);
 		max-width: 100%;
+	}
+
+	.intro__phrase
+	.intro__text--description
+	.about-me__description,
+	.contacts__blog__text {
+		font-size: var(--text-medium);
 	}
 
 	.projects {
@@ -93,5 +98,13 @@
 
 	.container--projects {
 		grid-template-columns: repeat(4,1fr);
+	}
+
+	.project__container:hover .project {
+		filter: brightness(0.5);
+	}
+
+	.project__container:hover .project__container__btn {
+		visibility: visible;
 	}
 }

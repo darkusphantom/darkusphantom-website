@@ -536,6 +536,9 @@ body {
 }
 
 .contacts .social-networks {
+	width: 100%;
+	max-width: 700px;
+	margin: 0 auto;
 	background: var(--white);
 	border-radius: 20px;
 }

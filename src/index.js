@@ -34,8 +34,6 @@
 	//Projects
 	const projects = document.querySelector('.container--projects');
 	projects.addEventListener('click',(event) => {
-		event.preventDefault();
-
 		const project = event.target.parentElement;
 		const projectBtnContainer = project.nextElementSibling;
 		const projects = event.target.parentElement.parentElement.parentElement.children;
